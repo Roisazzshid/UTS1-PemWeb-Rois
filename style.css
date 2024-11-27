@@ -1,0 +1,476 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+nav .navbar{
+    margin: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.logonav img {
+    width: 300px;
+    margin-left: 0;
+}
+
+.simbol i {
+    margin-right: 20px;
+    color: #fff;
+}
+
+.simbol i:hover {
+    color: #DE8F5F;
+}
+
+.simbol i::after {
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 0.1rem solid #DE8F5F;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.simbol i:hover::after {
+    transform: scaleX(1);
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    width: 75px;
+    height: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: #DE8F5F;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 0.1rem solid #DE8F5F;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+}
+
+#deskrip {
+    justify-items: end;
+    min-height: 100vh;
+    background-image: url('gambar/new-wall2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#deskrip::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg,rgba(255,255,255,0)3%,rgba(255, 255, 255, 0)25%);
+}
+
+#deskrip img {
+    margin-left: 30px;
+    width: 450px;
+    padding-right: 150px;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+#deskrip h1 {
+    font-size: 90px;
+    margin: 0;
+    padding-right: 100px;
+    padding-left: 700px;
+    padding-top: 200px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+#deskrip h1 .manis{
+    color: #AB886D;
+}
+
+#deskrip h2 {
+    margin-top: 0;
+    padding-right: 50px;
+    padding-left: 850px;
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+#deskrip p {
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 260px;
+    margin-top: 40px;
+    padding-top: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#deskrip a {
+    color: black;
+    transition: 0.1s linear;
+}
+
+#deskrip a:hover {
+    color: #AB886D;
+}
+
+#about {
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+#about::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+}
+
+.tentang {
+    display: flex;
+    align-items: center;
+}
+
+.tentang .bio-ceo {
+    color: bisque;
+}
+
+.tentang h3 {
+    text-align: justify;
+    margin-right: 70px;
+}
+
+.tentang .bio-ceo p {
+    font-size: 50px;
+    font-weight: 1000;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tentang img {
+    width: 700px;
+}
+
+.img-slide {
+    position: relative;
+    width: 756px;
+    height: 292px;
+    border-radius: 30px;
+    margin: 115px auto 0;
+
+}
+
+.img-slide .next,
+.img-slide .prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 30px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-slide .next:hover,
+.img-slide .prev:hover {
+    opacity: 1;
+    background-color: white;
+
+}
+
+.img-slide .prev { left: 59px;}
+
+.img-slide .prev::before {
+    content: '<';
+}
+
+.img-slide .next {
+    right: -59px;
+}
+
+.img-slide .next::before {
+    content: '>';
+}
+
+.img-slide > ul {
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.img-slide > ul > li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: #333;
+
+}
+
+.img-slide > ul > li > img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+}
+
+#menu {
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textmenu h3 {
+    padding: 5px;
+    text-align: center;
+    font-size: 70px;
+    color: #AB886D;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.baris {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kopi {
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+
+.kopi h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.kopi h2 {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.line {
+    text-align: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.line img {
+    width: 130px;
+    height: 130px;
+}
+
+.button-pesan {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.button-pesan i {
+    width: 55px;
+    height: 35px;
+    color: #AB886D;
+    margin-left: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid #AB886D;
+    border-radius: 50px;
+    padding-top: 20px;
+    transition: 0.2s linear;
+}
+
+.button-pesan i:hover {
+    color: #fff;
+    background-color: #AB886D;
+    
+}
+
+#contact {
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.map-kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-kontak {
+    height: 100px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    color: #AB886D;
+}
+
+.kontak {
+    margin: 60px;
+}
+
+.map {
+    margin-right: 70px;
+    margin-left: 20px;
+}
+
+.form-ask {
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+.form-ask input{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    font-size: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.form-ask textarea {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.form-ask label {
+    color: white;
+    margin-left: 15px;
+}
+
+.form-ask button {
+    width: 315px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.form-ask button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s linear;
+}
+
+.form-ask .jarak {
+    margin-top: 25px;
+}
+
+#foot {
+    min-height: 20vh;
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-foot {
+    display: flex;
+}
+
+.logo-foot img {
+    width: 20em;
+}
+
+.menu-foot {
+    list-style-type: none;
+}
+
+.sosmed-foot {
+    font-size: 1rem;
+}
+
+.sosmed-foot h4 {
+    margin: 0;
+}
+
+#foot .sosmed-foot p {
+    margin: 0;
+}
+
+.sosmed-foot i {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
